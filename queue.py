@@ -9,8 +9,9 @@ class Queue:
         return self.node.pop(0);
 
     def display_q(self):
-        if self.node is None:
+        if not self.node:
             print("Underflow")
+            return 
         i=0;
         print(self.node[i],"<--Front");
         print("-----------")
